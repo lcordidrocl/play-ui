@@ -1,12 +1,12 @@
 name: Publish
 on:
  workflow_run:
-  workflows: ["CI"]
+  workflows: ['CI']
   types:
    - completed
  push:
   branches:
-   - "main"
+   - 'main'
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -25,11 +25,11 @@ jobs:
      uses: actions/setup-node@v3
      with:
       node-version: 16.x
-      cache: "pnpm"
+      cache: 'pnpm'
    - name: Install Dependencies and build
      run: |
       echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGES_PAT }}" >> .npmrc
-      pnpm install --frozen-lockfile
+      pnpm install --no-frozen-lockfile
       pnpm build
    - name: Publish
      run: pnpm publish --no-git-checks
