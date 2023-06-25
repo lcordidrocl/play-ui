@@ -1,0 +1,12 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	fill="currentColor"
+	viewBox="0 0 45 30"
+	aria-labelledby="SortBy"
+>
+	<g>
+		<path
+			d="M17.5,30 L27.5,30 L27.5,25 L17.5,25 L17.5,30 L17.5,30 Z M0,0 L0,5 L45,5 L45,0 L0,0 L0,0 Z M7.5,17.5 L37.5,17.5 L37.5,12.5 L7.5,12.5 L7.5,17.5 L7.5,17.5 Z"
+		/>
+	</g>
+ </svg>

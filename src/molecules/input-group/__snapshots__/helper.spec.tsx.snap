@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`helper functions getIcon() 1`] = `
+<Toggle>
+  <Icon
+    as="Eyes"
+    size="Medium"
+  />
+</Toggle>
+`;

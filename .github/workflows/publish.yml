@@ -1,0 +1,37 @@
+name: Publish
+on:
+ workflow_run:
+  workflows: ["CI"]
+  types:
+   - completed
+ push:
+  branches:
+   - "main"
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+ publish:
+  if: ${{ github.event.workflow_run.conclusion == 'success' }}
+  runs-on: ubuntu-latest
+  steps:
+   - name: Checkout repo
+     uses: actions/checkout@v3
+   - name: Action setup
+     uses: pnpm/action-setup@v2
+     with:
+      version: 7
+   - name: Setup node
+     uses: actions/setup-node@v3
+     with:
+      node-version: 16.x
+      cache: "pnpm"
+   - name: Install Dependencies and build
+     run: |
+      echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGES_PAT }}" >> .npmrc
+      pnpm install --frozen-lockfile
+      pnpm build
+   - name: Publish
+     run: pnpm publish --no-git-checks
+     env:
+      GH_PACKAGES_PAT: ${{ secrets.GH_PACKAGES_PAT }}

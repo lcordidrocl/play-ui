@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"lib": ["dom", "esnext"],
+		"allowJs": true,
+		"jsx": "preserve",
+		"moduleResolution": "node",
+		"declaration": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"sourceMap": true,
+		"outDir": "dist",
+		"baseUrl": "src",
+		"skipLibCheck": true
+	},
+	"exclude": ["node_modules", ".next", "dist"]
+}
