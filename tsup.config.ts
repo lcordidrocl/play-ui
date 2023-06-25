@@ -16,6 +16,6 @@ export default defineConfig({
 		'src/atoms/index.ts',
 		'src/molecules/index.ts',
 	], // Entry point(s)
-	format: ['cjs', 'esm'], // Output format(s)
+	format: ['cjs'], // Output format(s)
 	external: ['react', 'react-dom'],
 });

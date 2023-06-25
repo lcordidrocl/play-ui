@@ -10,42 +10,35 @@
 		"format": "prettier --write \"./**/*.{ts,tsx,md,json}\" --config ./.prettierrc"
 	},
 	"main": "dist/index.js",
-	"module": "dist/index.mjs",
 	"types": "dist/index.d.ts",
 	"exports": {
 		".": {
 			"import": "./dist/index.js",
-			"module": "./dist/index.mjs",
 			"types": "./dist/index.d.ts",
 			"default": "./dist/index.js"
 		},
 		"./helpers": {
 			"import": "./dist/helpers/index.js",
-			"module": "./dist/helpers/index.mjs",
 			"types": "./dist/helpers/index.d.ts",
 			"default": "./dist/helpers/index.js"
 		},
 		"./types": {
 			"import": "./dist/types/index.js",
-			"module": "./dist/types/index.mjs",
 			"types": "./dist/types/index.d.ts",
 			"default": "./dist/types/index.js"
 		},
 		"./utils": {
 			"import": "./dist/utils/index.js",
-			"module": "./dist/utils/index.mjs",
 			"types": "./dist/utils/index.d.ts",
 			"default": "./dist/utils/index.js"
 		},
 		"./atoms": {
 			"import": "./dist/atoms/index.js",
-			"module": "./dist/atoms/index.mjs",
 			"types": "./dist/atoms/index.d.ts",
 			"default": "./dist/atoms/index.js"
 		},
 		"./molecules": {
 			"import": "./dist/molecules/index.js",
-			"module": "./dist/molecules/index.mjs",
 			"types": "./dist/molecules/index.d.ts",
 			"default": "./dist/molecules/index.js"
 		}
