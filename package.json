@@ -1,5 +1,5 @@
 {
-	"name": "@gurisandhu/play-ui",
+	"name": "@lcordidrocl/play-ui",
 	"version": "0.1.0",
 	"scripts": {
 		"sb": "start-storybook -p 6005 -s ./public --no-open",
@@ -98,15 +98,15 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/gurisandhu/play-ui"
+		"url": "https://github.com/lcordidrocl/play-ui"
 	},
 	"author": "Guri Sandhu",
 	"license": "ISC",
-	"homepage": "https://github.com/gurisandhu/play-ui#readme",
+	"homepage": "https://github.com/lcordidrocl/play-ui#readme",
 	"publishConfig": {
 		"@gurisandhu:registry": "https://npm.pkg.github.com"
 	},
 	"bugs": {
-		"url": "https://github.com/gurisandhu/play-ui/issues"
+		"url": "https://github.com/lcordidrocl/play-ui/issues"
 	}
 }
